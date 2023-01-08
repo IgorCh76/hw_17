@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/bootstrap.min..css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+ <div class="wrapper">
+    <div class="form col col-6 p-3 bg-success-subtle border border-primary-subtle rounded-3">
+        <h2><span>New travel:</span></h2>
+        <div class="mb-3 col-10">
+            <input type="text" id="city" placeholder="City" class="form-control">
+        </div>
+        <div class="mb-3 col-10">
+            <input type="text" id="country" placeholder="Country" class="form-control">
+        </div>
+        <div class="mb-3 col-10">
+            <input type="text" id="budget" placeholder="Budget" class="form-control">
+        </div>
+        <div class="mb-3 col-10">
+            <label for="date-start" class="form-label">Date start</label>
+            <div class="input-group">
+            <input id="date-start" type="date" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3 col-10">
+            <label for="date-end" class="form-label">Date end</label>
+            <div class="input-group">
+            <input id="date-end" type="date" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3 col-10">
+            <label for="persons" class="form-label">Persons:</label>
+            <select id="persons" class="form-select" aria-label="multiple select example">
+                <option selected>---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value=">7">>7</option>
+            </select>
+        </div>
+        <div class="mb-3 col-10">
+            <label for="transfer" class="form-label">Main transfer type:</label>
+            <select id="transfer" class="form-select" aria-label="multiple select example">
+                <option selected>---</option>
+                <option value="Bus">Bus</option>
+                <option value="Rent car">Rent car</option>
+                <option value="Taxi">Taxi</option>
+                <option value="Private car">Private car</option>
+                <option value="Fly">Fly</option>
+                <option value="Railway">Railway</option>
+            </select>
+        </div>
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success" id="add_btn">Save travel</button>
+        </div>
+    </div>
+    <div id="database" class="output_data col col-6 p-3 bg-success-subtle border border-primary-subtle rounded-3 flex-column">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
